@@ -1,0 +1,62 @@
+title: "Sezgin´s Notebook"
+description: "Sezgin´s Notebook"
+permalink: /:title 
+author: "Sezgin Ege"
+url: "https://blog.sezginege.com"
+
+# Google Analytics
+google_analytics: UA-53768957-1
+
+highlighter: rouge
+
+plugins: 
+  - jekyll-paginate-v2 
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true
+
+
+
+### SEO
+twitter:
+  username: sezginege
+  card: summary
+
+
+social:
+  name: Sezgin Ege
+  links:
+    - https://twitter.com/sezginege
+    - https://www.facebook.com/sezginege
+    - https://www.linkedin.com/in/sezginege
+    - https://github.com/sezginege
+
+### /SEO 
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail: 
+    before: 2
+    after: 2
+
+
+# /Pagination Settings
+
+#Edit enabled
+edit_enabled: false
+repository_url: ""
+#/edit enabled

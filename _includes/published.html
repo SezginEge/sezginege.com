@@ -1,0 +1,7 @@
+{% if page.date != nil and page.date != '' %}
+    {% assign date = page.date %}
+{% else %}
+    {% assign date = post.date %}
+{% endif %}
+
+<span class="published-on">{{ date | date_to_string }}</span>

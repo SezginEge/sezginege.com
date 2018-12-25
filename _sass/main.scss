@@ -1,0 +1,49 @@
+@import "color";
+
+.site-top-margin {
+    margin-top: 30px;
+}
+
+.list-style-none {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.post-title  a{
+    font-weight: bold;
+    color: $post-title-color;
+}
+
+.paginator {
+    color: $span-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.paginator > * {
+    margin: 5px;
+}
+
+.resources {
+    color: $secondary-color;
+}
+
+.page-number {
+    margin: 0;
+}
+
+
+.published-on {
+    font-size: 0.7rem;
+    font-style: italic;
+    color: $span-color;
+}
+
+
+.footer {
+    bottom: 0;
+    margin-top: auto!important;
+}

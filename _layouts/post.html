@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-md-12">
+    <h2 class="post-title">
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </h2>
+    {%- include published.html -%}
+  </div>
+  <div class="col-md-12">{{ content }}</div>
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-6">{% include share-buttons.html %}</div>
+       {% if site.github_edit_enabled %}
+        <!--TODO: github url is not properly generated-->
+      <div class="col-md-6"><p class="text-md-right text-sm-left"><a href="{{site.repository_url}}{{page.url}}" target="_blank" rel="noopener noreferrer">Help me to improve this article</a></p></div>
+      {% endif %}
+    </div>
+  </div>
+  {% if page.comments %}
+  <div class="col-md-12">
+       {%- include disquss.html -%} 
+  </div>
+  {% endif %}
+</div>
+
+
