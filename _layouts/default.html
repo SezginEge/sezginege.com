@@ -16,15 +16,20 @@
       crossorigin="anonymous"
     />
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+    
+    <!-- Custom CSS -->    
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    
     {% if site.google_analytics and jekyll.environment == 'production' %} {%
     include analytics.html %} {% endif %}
   </head>
-  <body class="container-fluid">
+  <body class="container-fluid" style="max-width: 80rem;">
     <main role="main" class="site-top-margin ">
       <div class="row">
         <div class="col-md-8 offset-md-2">
-          {%- include resources.html -%}
+          {%- include link.html -%}
         </div>
       </div>
       {% if page.url == "/index.html" %}

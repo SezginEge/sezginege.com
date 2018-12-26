@@ -1,0 +1,6 @@
+- name: blog
+  link: /
+- name: about
+  link: /about
+- name: subscribe feed
+  link: /feed.xml

@@ -1,7 +1,30 @@
-@import "color";
+$main-color: #d23669;
+$span-color: #9EABB3;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.75;
+    font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, a, a:hover {
+    color: $main-color;
+}
+
+a:hover {
+    text-decoration: none;
+}
 
 .site-top-margin {
     margin-top: 30px;
+}
+
+.links {
+    font-size: 1.2rem;
 }
 
 .list-style-none {
@@ -10,13 +33,8 @@
     width: 100%;
 }
 
-.post-title  a{
-    font-weight: bold;
-    color: $post-title-color;
-}
-
 .paginator {
-    color: $span-color;
+    color: $main-color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,21 +45,15 @@
     margin: 5px;
 }
 
-.resources {
-    color: $secondary-color;
-}
-
 .page-number {
     margin: 0;
 }
 
-
 .published-on {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-style: italic;
     color: $span-color;
 }
-
 
 .footer {
     bottom: 0;
