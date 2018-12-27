@@ -57,6 +57,6 @@ pagination:
 # /Pagination Settings
 
 #Edit enabled
-edit_enabled: false
-repository_url: ""
+edit_enabled: true
+repository_url: "https://github.com/SezginEge/blog.sezginege.com/edit/master/_posts/"
 #/edit enabled
