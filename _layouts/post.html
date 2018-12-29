@@ -13,7 +13,7 @@ layout: default
   <div class="col-md-12">
     <hr>
     {% if site.edit_enabled %}
-    <p><a href="{{site.repository_url}}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | remove: " -" | replace: " ", "-" }}.md" target="_blank" rel="noopener noreferrer">Help me to improve this article</a></p>
+    <p><a href="{{site.repository_url}}{{ page.date | date: "%Y-%m-%d" }}-{{ page.url | remove: "/" }}.md" target="_blank" rel="noopener noreferrer">Help me to improve this article</a></p>
     {% endif %}
   </div>
   {% if page.comments %}
