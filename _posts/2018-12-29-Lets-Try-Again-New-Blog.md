@@ -6,7 +6,7 @@ categories: announcement
 
 I really wanted to stop giving status updates like this on my blog. I believe that Twitter is a good platform to share those updates but let´s make an exception and I hope, this will be the last.
 
-### [What happened old blog(s)?](#what-happened-old-blogs)
+### [What happened to the old blog(s)?](#what-happened-old-blogs)
 
 I had a few blogging experiences with different platforms (Blogger/Wordpress). I was blogging about technical stuff and I was happy with the traffic I have. However at some point, I just lost my motivation and I thought, blog posts I shared were not good enough from a technical perspective. So, I stopped blogging.
 
