@@ -13,7 +13,11 @@ h2 {
     font-size: 1.5rem;
 }
 
-p {
+h3 {
+    font-size: 1.25rem;
+}
+
+p, li  {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.75;
     font-size: 1.1rem;
@@ -31,6 +35,13 @@ a:hover {
 a[href*='#']:before {
     content: url(../svg/link-intact.svg);
     margin-right: 10px;
+}
+
+img {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 10px;
 }
 
 .site-top-margin {
