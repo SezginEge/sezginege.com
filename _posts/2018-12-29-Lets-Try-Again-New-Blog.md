@@ -1,6 +1,6 @@
 ---
 layout : post
-title: "Let´s try again: New Blog"
+title: "Let´s Try Again: New Blog"
 categories: announcement
 ---
 
