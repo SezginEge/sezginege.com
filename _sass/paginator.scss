@@ -1,0 +1,17 @@
+$paginator-color: #222;
+
+.paginator {
+    color: $paginator-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.paginator > * {
+    margin: 5px;
+}
+
+.page-number {
+    margin: 0;
+}

@@ -1,0 +1,47 @@
+$heading-color: #222;
+$heading-hover-color: #222;
+
+h1, 
+h2, 
+h3,
+h4, 
+h5, 
+h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: $heading-color;
+}
+
+h1 > a, 
+h2 > a, 
+h3 > a, 
+h4 > a, 
+h5 > a, 
+h6 > a {
+    color: $heading-color;
+    &:hover {
+        color: $heading-hover-color;
+    }
+}
+
+h1 > a:hover, 
+h2 > a:hover, 
+h3 > a:hover, 
+h4 > a:hover, 
+h5 > a:hover, 
+h6 > a:hover {
+    color: $heading-hover-color;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}

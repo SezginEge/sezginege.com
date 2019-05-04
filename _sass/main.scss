@@ -1,31 +1,16 @@
-$main-color: #d23669;
 $span-color: #9EABB3;
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif;
-}
+@import "headings";
+@import "paginator";
 
-h1 {
-    font-size: 1.75rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-h3 {
-    font-size: 1.25rem;
+*, *:before, *:after {
+    -webkit-font-smoothing: antialiased;
 }
 
 p, li  {
-    font-family: 'Montserrat', sans-serif;
     line-height: 1.75;
     font-size: 1.1rem;
     overflow-wrap: break-word;
-}
-
-h1, h2, h3, h4, h5, h6, a, a:hover {
-    color: $main-color;
 }
 
 a:hover {
@@ -42,6 +27,8 @@ img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .site-top-margin {
@@ -56,22 +43,6 @@ img {
     list-style-type: none;
     padding: 0;
     width: 100%;
-}
-
-.paginator {
-    color: $main-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.paginator > * {
-    margin: 5px;
-}
-
-.page-number {
-    margin: 0;
 }
 
 .published-on {
