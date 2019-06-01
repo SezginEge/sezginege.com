@@ -6,7 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="google-site-verification" content="8sGcWShT4P-2EfDxG_y61F5t_BWuz2qawBw14qsfGCg" />
+    <meta
+      name="google-site-verification"
+      content="8sGcWShT4P-2EfDxG_y61F5t_BWuz2qawBw14qsfGCg"
+    />
     {% seo %}
     <!-- Bootstrap CSS -->
     <link
@@ -17,27 +20,29 @@
     />
 
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    
+
     {% if site.google_analytics and jekyll.environment == 'production' %} {%
     include analytics.html %} {% endif %}
   </head>
-  <body class="container-fluid" style="max-width: 80rem;">
+  <body>
     <main role="main" class="site-top-margin ">
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          {%- include link.html -%}
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            {%- include link.html -%}
+          </div>
         </div>
-      </div>
-      {% if page.url == "/index.html" %}
-      <div class="row">
-          <div class="col-md-8 offset-md-2 d-none d-sm-block">
+        {% if page.url == "/index.html" %}
+        <div class="row">
+          <div class="col">
             {%- include about.html -%}
           </div>
         </div>
-      {% endif %}
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-            {{ content }} 
+        {% endif %}
+        <div class="row">
+          <div class="col">
+            {{ content }}
+          </div>
         </div>
       </div>
     </main>
