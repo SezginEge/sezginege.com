@@ -1,6 +1,5 @@
 language: ruby
-rvm:
-  - 2.4.1
+before_install: gem install bundler
 install: bundle install
 script: bundle exec jekyll build
 after_success: find _site/ -type f ! -iname 'index.html' -iname '*.html' -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done && s3_website push
