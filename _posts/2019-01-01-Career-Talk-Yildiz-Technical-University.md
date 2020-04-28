@@ -1,11 +1,11 @@
 ---
-layout : post
+layout: post
 title: "📣 Career Talk at Yildiz Technical University"
 categories: talk, career
 ---
 A few months ago, I had the chance to talk as a former student at Yildiz Technical University about how I built my career after graduation and a few things I wish to learn in the years to come. Huge thanks to [Prof.Dr.Banu Diri](https://www.ce.yildiz.edu.tr/personal/banud) and [Skylab](https://www.facebook.com/ytuskylab) team to organize this fantastic event!
 
-![Attendees](assets/2019-01-01-Career-Talk-Yildiz-Technical-University/img/attendees.jpg)
+![Attendees]({{ site.url }}/assets/2019-01-01-Career-Talk-Yildiz-Technical-University/img/attendees.jpg)
 
 I really enjoyed being there and tried to answer as much people´s questions as I could ✌️ I hope, we can do these kinds of events more often. *It seems we should, given the [great feedback received.][1]*
 
