@@ -1,31 +1,7 @@
 defaults: &defaults
   working_directory: ~/repo
 version: 2
-references:
-  install_awscli: &install_awscli
-    run:
-      name: Install AWS CLI
-      command: |
-        sudo pip install awscli --upgrade
-  add_aws_credentials: &add_aws_credentials
-    run:
-      name: Set AWS credentials
-      command: |
-        aws configure set aws_access_key_id ${AWS_ACCESS_KEY_ID}
-        aws configure set aws_secret_access_key ${AWS_SECRET_ACCESS_KEY}
-  deploy_to_s3: &deploy_to_s3
-    run:
-      name: Upload to s3
-      command: |
-        echo "Copying files to server..."
-        aws s3 sync _site/ "s3://${S3_BUCKET_NAME}" --size-only --exclude "*" --include "*.*" --delete
-        echo "Copying files with content type..."
-        aws s3 sync _site/ "s3://${S3_BUCKET_NAME}" --size-only --content-type text/html --exclude "*.*"
-  clear_cloudfront_cache: &clear_cloudfront_cache
-    run:
-      name: Clear CloudFront cache
-      command: |
-        aws cloudfront create-invalidation --distribution-id "$CLOUD_FRONT_DIST_ID" --paths '/*'
+
 jobs:
   build:
     <<: *defaults
@@ -72,10 +48,26 @@ jobs:
     steps:
       - attach_workspace:
           at: ./
-      - *install_awscli
-      - *add_aws_credentials
-      - *deploy_to_s3
-      - *clear_cloudfront_cache
+      - run:
+          name: Install AWS CLI
+          command: |
+            sudo pip install awscli --upgrade
+      - run:
+          name: Set AWS credentials
+          command: |
+            aws configure set aws_access_key_id ${AWS_ACCESS_KEY_ID}
+            aws configure set aws_secret_access_key ${AWS_SECRET_ACCESS_KEY}
+      - run:
+          name: Upload to s3
+          command: |
+            echo "Copying files to server..."
+            aws s3 sync _site/ "s3://${S3_BUCKET_NAME}" --size-only --exclude "*" --include "*.*" --delete
+            echo "Copying files with content type..."
+            aws s3 sync _site/ "s3://${S3_BUCKET_NAME}" --size-only --content-type text/html --exclude "*.*"
+      - run:
+          name: Clear CloudFront cache
+          command: |
+            aws cloudfront create-invalidation --distribution-id "$CLOUD_FRONT_DIST_ID" --paths '/*'
 workflows:
   version: 2
   test-deploy:
