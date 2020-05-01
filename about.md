@@ -4,24 +4,10 @@ title: About me
 permalink: about
 ---
 
-#### *Disclaimer*
-
-*This disclaimer informs readers that the views, thoughts, and opinions expressed in the blog belong solely to the author, and not necessarily to the author’s employer, organization, committee or other group or individual.*
-
 ## About me
 
-Hi, My name is Sezgin Ege. I am a software engineer, rider and traveller. I blog about generally technology but not limited with that.
+Hi! My name is Sezgin Ege. I am a software engineer, rider and traveller. Currently, I live in Berlin/Germany and work on AWS Developer Tools Team at Amazon, **but this blog, its content and opinions are my own**.
 
-I live in Madrid, Spain since 2017 and work for Amazon to shape feature of fashion. *[See Prime Wardrobe](https://www.amazon.com/learn-more-prime-wardrobe/b?ie=UTF8&node=16122413011)*
+I usually blog about tech but not limited with that. I hope, you will also enjoy my blog posts about culture, gadgets, travelling etc.
 
-I consider myself a reasonably experienced web software developer. I like coding and designing systems.
-
-## How to Contact?
-
-You can reach me anytime through social media:
-
-[twitter/@sezginege](https://twitter.com/SezginEge)
-
-[linkedin/@sezginege](https://www.linkedin.com/in/sezginege/)
-
-or you can just send me an email: <mail@sezginege.com>
+I would love it if you would subscribe to [my blog's RSS feed](https://blog.sezginege.com/feed.xml). I'm also on [Twitter](https://twitter.com/SezginEge), [Linkedin](https://www.linkedin.com/in/sezginege/). If you just want to email me, go ahead and send an email: <mail@sezginege.com> I am always happy to get in touch with people. If you have something to talk about or questions on anything, feel free to reach out!
