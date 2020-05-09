@@ -1,0 +1,13 @@
+id = "sezginege"
+
+[email]
+username = "mail"
+host = "sezginege.com"
+
+[name]
+display = "Sezgin Ege"
+
+[social]
+email = "mail@sezginege.com"
+facebook  = "SezginEge"
+twitter = "SezginEge"
